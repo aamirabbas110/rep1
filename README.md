@@ -1,6 +1,7 @@
 # Lightning House Logo
 
-This project showcases a simple HTML and CSS implementation to create a house structure with an animated lightning effect.
+This project showcases a simple HTML and CSS implementation to create a house structure with an animated lightning effect. This code is contributed by <a href=https://www.alightmotionapk.com/>Alight Motion Pro</a>
+
 
 ## Table of Contents
 

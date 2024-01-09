@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lightning House Logo</title>
+  <style>
+    /* Reset default margins and padding */
+    body, h1, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* House Structure */
+    .house {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+
+    .roof {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid #8B4513; /* Brown color for the roof */
+      position: absolute;
+      top: 0;
+    }
+
+    .walls {
+      width: 100px;
+      height: 50px;
+      background-color: #FFD700; /* Yellow color for walls */
+      position: absolute;
+      top: 50px;
+    }
+
+    .door {
+      width: 30px;
+      height: 40px;
+      background-color: #8B4513; /* Brown color for the door */
+      position: absolute;
+      bottom: 0;
+      left: 35px;
+    }
+
+    .window {
+      width: 20px;
+      height: 20px;
+      background-color: #ADD8E6; /* Light blue color for the window */
+      position: absolute;
+      top: 10px;
+      left: 40px;
+    }
+
+    /* Lightning Animation */
+    .lightning {
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-left: 15px solid #FFFF00; /* Yellow color for lightning */
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      opacity: 0;
+      animation: lightningAnimation 0.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes lightningAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="house">
+    <div class="roof"></div>
+    <div class="walls">
+      <div class="door"></div>
+      <div class="window"></div>
+      <div class="lightning"></div>
+    </div>
+  </div>
+</body>
+</html>
